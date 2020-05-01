@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% block vars %}
+{% set config = {
+	lang: "en",
+	template: "tpl__home",
+	page: "home",
+	title: "Asteroids homepage"
+} %}
+{% endblock %}
+<html class="no-js" lang="{{config.lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{config.title}}</title>
+	{% block head %}
+		{% include "partials/_head.njk" %}
+	{% endblock %}
+
+</head>
+<body class="{{config.template}} {{config.page}}">
+  {% block content %}
+
+	{% endblock %}
+</body>
+</html>
