@@ -1,8 +1,7 @@
-.title {
+.main-title {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	-webkit-transform: translate(-50%, -70%);
 	transform: translate(-50%, -70%);
 	margin: 0;
 	background: #444;
@@ -12,13 +11,13 @@
 	border-radius: 5px;
 }
 
-.title__tooltip {
+.main-title__tooltip {
 	font-weight: normal;
 	position: relative;
 	z-index: 2;
 }
 
-.title::before {
+.main-title::before {
 	content: '';
 	background: #444;
 	position: absolute;
@@ -27,12 +26,11 @@
 	height: 20px;
 	left: 50%;
 	border-radius: 3px;
-	-webkit-transform: translate(-50%, -16px) rotate(45deg);
 	transform: translate(-50%, -16px) rotate(45deg);
 	z-index: 1;
 }
 
-.title::after {
+.main-title::after {
 	content: '';
 	background: url(../img/layout/caffeine-mug.svg) center center no-repeat;
 	background-size: auto 20px;
@@ -41,7 +39,6 @@
 	width: 22px;
 	height: 20px;
 	left: 50%;
-	-webkit-transform: translate(-44%, 12px);
 	transform: translate(-44%, 12px);
 	z-index: 1;
 }
